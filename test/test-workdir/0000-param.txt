@@ -1,0 +1,26 @@
+Namespace(input='/home/dsp52026/桌面/VP_/c3_baseline/test/data/192x128_kodim15.png', output='/home/dsp52026/桌面/VP_/c3_baseline/test/test-workdir/coding-0000-192x128_kodim15.cool', workdir='/home/dsp52026/桌面/VP_/c3_baseline/test/test-workdir/', lmbda=0.001, job_duration_min=-1, print_detailed_archi=False, print_detailed_struct=False, intra_pos='0', p_pos='', n_frames=1, frame_offset=0, coding_idx=0, enc_cfg='/home/dsp52026/桌面/VP_/c3_baseline/test/../samples/../cfg/enc/debug.cfg', dec_cfg_residue='/home/dsp52026/桌面/VP_/c3_baseline/test/../samples/../cfg/dec/intra/vlop.cfg', dec_cfg_motion='/home/dsp52026/桌面/VP_/c3_baseline/test/../samples/../cfg/dec/motion/lop.cfg', start_lr=0.01, n_itr=10000, n_itr_pretrain_motion=1000, n_train_loops=1, preset='debug', tune='wasserstein', layers_synthesis_residue='8-1-linear-relu,X-1-linear-none,X-3-residual-none', layers_synthesis_motion='8-1-linear-relu,X-1-linear-none,X-3-residual-none', arm_residue='8,1', arm_motion='8,1', n_ft_per_res_residue='1,1,1,1,1,1,1', n_ft_per_res_motion='0,0,1,1,1,1,1', ups_k_size_residue=8, ups_k_size_motion=8, ups_preconcat_k_size_residue=7, ups_preconcat_k_size_motion=7, warp_filter_size=8)
+
+Command Line Args:   --input=/home/dsp52026/桌面/VP_/c3_baseline/test/data/192x128_kodim15.png --workdir=/home/dsp52026/桌面/VP_/c3_baseline/test/test-workdir/ --intra_pos=0 --p_pos= --n_frames=1 --output=/home/dsp52026/桌面/VP_/c3_baseline/test/test-workdir/coding-0000-192x128_kodim15.cool --coding_idx=0 --enc_cfg=/home/dsp52026/桌面/VP_/c3_baseline/test/../samples/../cfg/enc/debug.cfg --dec_cfg_residue=/home/dsp52026/桌面/VP_/c3_baseline/test/../samples/../cfg/dec/intra/vlop.cfg --dec_cfg_motion=/home/dsp52026/桌面/VP_/c3_baseline/test/../samples/../cfg/dec/motion/lop.cfg --tune=wasserstein
+Config File (/home/dsp52026/桌面/VP_/c3_baseline/test/../samples/../cfg/dec/motion/lop.cfg):
+  arm_motion:        8,1
+  layers_synthesis_motion:8-1-linear-relu,X-1-linear-none,X-3-residual-none
+  n_ft_per_res_motion:0,0,1,1,1,1,1
+  ups_k_size_motion: 8
+  ups_preconcat_k_size_motion:7
+  warp_filter_size:  8
+Config File (/home/dsp52026/桌面/VP_/c3_baseline/test/../samples/../cfg/dec/intra/vlop.cfg):
+  arm_residue:       8,1
+  layers_synthesis_residue:8-1-linear-relu,X-1-linear-none,X-3-residual-none
+  n_ft_per_res_residue:1,1,1,1,1,1,1
+  ups_k_size_residue:8
+  ups_preconcat_k_size_residue:7
+Config File (/home/dsp52026/桌面/VP_/c3_baseline/test/../samples/../cfg/enc/debug.cfg):
+  start_lr:          1e-2
+  n_train_loops:     1
+  preset:            debug
+Defaults:
+  --lmbda:           0.001
+  --job_duration_min:-1
+  --frame_offset:    0
+  --n_itr:           10000
+  --n_itr_pretrain_motion:1000

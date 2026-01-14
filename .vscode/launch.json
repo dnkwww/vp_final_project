@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cool-Chic: Test Kodak 01",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "coolchic.encode",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/coolchic"
+            },
+            "args": [
+                "-i", "/home/dsp52026/桌面/VP_/c3_baseline/image/kodim01.png",  
+                "-o", "test_bitstream.bin",
+                "--n_itr", "100",
+                "--workdir", "./logs"
+            ],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

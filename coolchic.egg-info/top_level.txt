@@ -1,0 +1,3 @@
+ccdecapi_avx2
+ccdecapi_cpu
+ccencapi

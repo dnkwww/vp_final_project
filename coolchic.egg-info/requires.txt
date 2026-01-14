@@ -1,0 +1,11 @@
+torch>=2.7.1
+torchvision
+matplotlib
+einops
+fvcore
+cmake
+ConfigArgParse
+psutil
+pytest
+pytest-order
+scipy

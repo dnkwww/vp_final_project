@@ -1,0 +1,5 @@
+rd_results*.csv
+rd_curve*.png
+__pycache__/
+image/
+*.pyc
